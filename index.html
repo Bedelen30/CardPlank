@@ -3,34 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <title>CardPlank</title>
-    <link rel="shortcut icon" type="x-icon" href="planky.png" />
+    <link rel="shortcut icon" type="x-icon" href="CARDPLANK.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" />
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        height: 80px;
+        padding: 0 50px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #navbar__logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #444444;
+      }
+
+      .navbar__menu {
+        list-style: none;
+        display: flex;
+      }
+
+      .navbar__item {
+        margin-right: 30px;
+      }
+
+      .navbar__links {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #444444;
+        text-transform: uppercase;
+      }
+
+      .navbar__links:hover {
+        color: #0077b6;
+      }
+
+      .button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        background-color: #0077b6;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #ffffff;
+        color: #0077b6;
+        border: 2px solid #0077b6;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo">CardPlank</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links"> Home </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/Contact/.html" class="navbar__links"> Contact </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links"> About </a>
-          </li>
-          <li class="navbar__btn">
-            <a href="/" class="button"> Sign up </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1>CardPlank</h1>
-    <script src="app.js"></script>
-  </body>
-</html>
+      <a href="/" id="navbar__logo">CardPlank</a>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/Contact.html" class="navbar__links">Contact</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">About</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="/" class="button">Sign up</a>
