@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
+
 	<meta charset="UTF-8">
 	<title>Signup Page</title>
 	<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
+        
+        body {
+        background-image: url('cp.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .navbar__logo {
+  background-image: url('cardplanklogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        height: 100px;
+        padding: 0 50px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar__menu {
+        list-style: none;
+        display: flex;
+      }
+
+      .navbar__item {
+        margin-right: 30px;
+      }
+
+      .navbar__links {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #444444;
+        text-transform: uppercase;
+      }
+
+      .navbar__links:hover {
+        color: #0077b6;
+      }
+
+      .button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        background-color: #0077b6;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 50px;
+      }
+
+      .button:hover {
+        background-color: #ffffff;
+        color: #0077b6;
+        border: 2px solid #0077b6;
+      }
 		body {
 			margin: 0;
 			padding: 0;
@@ -26,13 +85,133 @@
 			box-sizing: border-box;
 			padding: 50px;
 			max-width: 400px;
+            margin-top: 100px;
 		} 
-		
+		.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        height: 100px;
+        padding: 0 50px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #navbar__logo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #444444;
+      }
+      #mc_embed_subscribe {
+  margin-top: 50px;
+}
+
+      .navbar__menu {
+        list-style: none;
+        display: flex;
+      }
+
+      .navbar__item {
+        margin-right: 30px;
+      }
+
+      .navbar__links {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #444444;
+        text-transform: uppercase;
+      }
+
+      .navbar__links:hover {
+        color: #0077b6;
+      }
+
+      .button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        background-color: #0077b6;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #ffffff;
+        color: #0077b6;
+        border: 2px solid #0077b6;
+      }
 		body {
 			background-image: url('cp.png');
 			background-repeat: repeat;
 			background-size: cover;
+            
+            
 		}
+        .navbar {
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        height: 100px;
+        padding: 0 50px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  height: 100px;
+  padding: 0 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__item {
+  margin-right: 30px;
+}
+
+.navbar__links {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.navbar__links:hover {
+  color: #0077b6;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  background-color: #0077b6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #0077b6;
+  border: 2px solid #0077b6;
+  
+}
+
 	</style>
 </head>
 <body>
@@ -60,6 +239,33 @@
 			</form>
 		</div>
 	</div>
+        <body>
+            <nav class="navbar">
+                <a href="CAP.PNG" id="navbar__logo">
+                  <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
+                </a>     
+                <ul class="navbar__menu">
+                  <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+                  </li>
+                  <li class="navbar__btn">
+                    <a href="signup.html" class="button">SIGN UP</a>
+                  </li>
+                </ul>
+              </nav>
+              <style>
+                .logo-img {
+                margin-left: -50px !important;
+                  width: 400px;
+                  height: auto;
+                  margin-top: 30px
+                }
+              </style>            
 	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-	<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]=
-    })
+	<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]=  
+    <div style="background-color: #ffffff; padding: 30px; text-align: center;">           
+</div>  
+})

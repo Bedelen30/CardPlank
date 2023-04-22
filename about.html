@@ -9,7 +9,8 @@
       body {
         background-image: url('cp.png');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: stretch;
+        margin-top: 100px;
       }
 
       .navbar {
@@ -20,8 +21,16 @@
         height: 100px;
         padding: 0 50px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  height: 100px;
+  padding: 0 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
       }
-
       #navbar__logo {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -38,6 +47,7 @@
 
       .navbar__item {
         margin-right: 30px;
+        margin-top: 0px;
       }
 
       .navbar__links {
@@ -72,11 +82,13 @@
   </head>
   <body>
     <nav class="navbar">
-        <a href="/" id="navbar__logo">CardPlank</a>
+        <a href="CAP.PNG" id="navbar__logo">
+          <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
+        </a>     
         <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="index.html" class="navbar__links">Home</a>
-              </li>
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Home</a>
+          </li>
           <li class="navbar__item">
             <a href="about.html" class="navbar__links">About</a>
           </li>
@@ -84,12 +96,15 @@
             <a href="signup.html" class="button">SIGN UP</a>
           </li>
         </ul>
-      </nav>      
-    <div style="background-color: #ffffff; padding: 30px; text-align: center;">
-      <p style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: #444444;">Unlimited auctions, zero fees.</p>
-    </div>
-  </body>
-</html>
+      </nav>
+      <style>
+        .logo-img {
+        margin-left: -50px !important;
+          width: 400px;
+          height: auto;
+          margin-top: 30px
+        }
+      </style>   
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -101,9 +116,28 @@
       background-image: url('cp.png');
       background-repeat: repeat;
       background-size: cover;
-      margin: 20;
-      padding: 20;
+      margin: 150px;
+      padding: 30px;
     }
+    .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 500px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 
     #mc_embed_signup {
 			background: #fff;
@@ -114,7 +148,7 @@
 			box-sizing: border-box;
 			padding: 50px;
 			max-width: 1800px;
-            margin-top: -100px;
+            margin-top: -50px;
 }
   </style>
 </head>
@@ -136,5 +170,4 @@
     <p>Together, Brian and Nate bring a unique blend of technical expertise and creative problem-solving to the sports card market.</p>
   </div>
 </body>
-<a href="index.html" class="navbar__links">Home</a>
 </html>

@@ -11,7 +11,10 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-
+      .navbar {
+  margin: 0;
+  padding: 0;
+}
       .navbar {
         display: flex;
         justify-content: space-between;
@@ -20,7 +23,16 @@
         height: 100px;
         padding: 0 50px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  height: 100px;
+  padding: 0 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
 
       #navbar__logo {
         font-family: 'Montserrat', sans-serif;
@@ -72,21 +84,28 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="/" id="navbar__logo">CardPlank</a>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="index.html" class="navbar__links">Home</a>
-        </li>
-        <li class="navbar__item" style="margin-right: 30px;">
-          <a href="about.html" class="navbar__links">About</a>
-        </li>
-        <li class="navbar__btn">
-          <a href="signup.html" class="button">SIGN UP</a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+        <a href="CAP.PNG" id="navbar__logo">
+          <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
+        </a>     
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="signup.html" class="button">SIGN UP</a>
+          </li>
+        </ul>
+      </nav>
+      <style>
+        .logo-img {
+        margin-left: -50px !important;
+          width: 400px;
+          height: auto;
+          margin-top: 30px
+        }
+      </style>   
 </html>
-<div style="background-color: #ffffff; padding: 30px; text-align: center;">            
-    <p style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; color: #444444;">Unlimited auctions, zero fees.</p>
 </div>
