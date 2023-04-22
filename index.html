@@ -33,6 +33,21 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
+      .navbar__left {
+  flex: 1;
+}
+
+.navbar__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
 
       #navbar__logo {
         font-family: 'Montserrat', sans-serif;
@@ -80,25 +95,50 @@
         color: #0077b6;
         border: 2px solid #0077b6;
       }
+      .search-box {
+        color: #000;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 8px;
+        background: url(./icons/icons8-search-24.png) no-repeat center right; 
+        background-size: 24px 24px;
+      }
+      .search-box::placeholder {
+        padding-left: 5px;
+        color: #000;
+      }
+   
     </style>
   </head>
   <body>
     <nav class="navbar">
-        <a href="CAP.PNG" id="navbar__logo">
-          <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
-        </a>     
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="about.html" class="navbar__links">About</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="signup.html" class="button">SIGN UP</a>
-          </li>
-        </ul>
-      </nav>
+  <div class="navbar__left">
+    <a href="CAP.PNG" id="navbar__logo">
+      <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
+    </a>
+  </div>
+  
+  <div class="navbar__center">
+      <input class="search-box" placeholder="Search..."></input>
+    
+  </div>
+  
+  <div class="navbar__right">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="about.html" class="navbar__links">About</a>
+      </li>
+      <li class="navbar__btn">
+        <a href="signup.html" class="button">SIGN UP</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  </div>
       <style>
         .logo-img {
         margin-left: -50px !important;
@@ -107,5 +147,5 @@
           margin-top: 30px
         }
       </style>   
+  </body>
 </html>
-</div>
