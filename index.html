@@ -36,7 +36,19 @@
       .navbar__left {
   flex: 1;
 }
-
+@media screen and (min-width:768px) {
+  .logo-img {
+    margin-left: -50px !important;
+    width: 400px;
+    height: auto;
+    margin-top: 30px
+  }
+}
+@media screen and (max-width:767px) {
+  .logo-img {
+    width: 150px;
+  }
+}
 .navbar__center {
   flex: 1;
   display: flex;
@@ -48,6 +60,33 @@
   display: flex;
   justify-content: flex-end;
 }
+
+
+.nav_center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 30vw;
+  margin: 0;
+  list-style: none;
+}
+.list-none {
+  list-style:none;
+}
+.row {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 
       #navbar__logo {
         font-family: 'Montserrat', sans-serif;
@@ -75,6 +114,10 @@
         text-transform: uppercase;
       }
 
+      .text-center {
+        text-align: center;
+      }
+
       .navbar__links:hover {
         color: #0077b6;
       }
@@ -96,11 +139,18 @@
         border: 2px solid #0077b6;
       }
       .search-box {
+        display: flex;
         color: #000;
         border-radius: 10px;
         border: 1px solid black;
         padding: 8px;
-        background: url(./icons/icons8-search-24.png) no-repeat center right; 
+        width: 25vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        transform: translateX(2.5vw);
+        align-items: center;
+        align-content: center;
+        background: url("./icons.png") no-repeat center right; 
         background-size: 24px 24px;
       }
       .search-box::placeholder {
@@ -118,34 +168,50 @@
     </a>
   </div>
   
-  <div class="navbar__center">
-      <input class="search-box" placeholder="Search..."></input>
-    
+
+  <div class="nav_center">
+    <div>
+      <input id="search" class="search-box" placeholder="Search..."></input>
+    </div>
+
+      <ul class="row">
+        <li class="list-none">
+          <a href="index.html" class="navbar__links">Home</a>
+        </li>
+        <li class="list-none">
+          <a href="about.html" class="navbar__links">About</a>
+        </li>
+        <li class="list-none">
+          <a href="about.html" class="navbar__links">Cards</a>
+        </li>
+        <li class="list-none">
+          <a href="about.html" class="navbar__links">Auctions</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  
+
   <div class="navbar__right">
-    <ul class="navbar__menu">
-      <li class="navbar__item">
-        <a href="index.html" class="navbar__links">Home</a>
-      </li>
-      <li class="navbar__item">
-        <a href="about.html" class="navbar__links">About</a>
-      </li>
-      <li class="navbar__btn">
-        <a href="signup.html" class="button">SIGN UP</a>
-      </li>
-    </ul>
+    <li class="navbar__btn navbar__item navbar__menu">
+      <a href="signup.html" class="button">SIGN UP</a>
+    </li>
   </div>
+
 </nav>
 
   </div>
       <style>
-        .logo-img {
-        margin-left: -50px !important;
-          width: 400px;
-          height: auto;
-          margin-top: 30px
-        }
+
       </style>   
   </body>
+  <script>
+    var input = document.querySelector("#search")
+    function type() {
+      console.log(input.value)
+      if (input.value === "sss") {
+        window.location.href = ""
+      }
+    }
+    input.addEventListener("change", type);
+  </script>
 </html>
