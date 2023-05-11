@@ -15,7 +15,9 @@
       .navbar {
   margin: 0;
   padding: 0;
+  display: flex;
 }
+
       .navbar {
         display: flex;
         justify-content: space-between;
@@ -60,6 +62,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 
@@ -74,15 +77,7 @@
 .list-none {
   list-style:none;
 }
-.row {
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 8px;
-  flex-direction: row;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -105,6 +100,7 @@ ul {
 
       .navbar__item {
         margin-right: 30px;
+        margin-top: 0px;
       }
 
       .navbar__links {
@@ -113,6 +109,7 @@ ul {
         text-decoration: none;
         color: #444444;
         text-transform: uppercase;
+        margin-right: 5px;
       }
 
       .text-center {
@@ -145,7 +142,7 @@ ul {
         border-radius: 10px;
         border: 1px solid black;
         padding: 8px;
-        width: 25vw;
+        width: 30vw;
         justify-content: center;
         flex-wrap: wrap;
         transform: translateX(2.5vw);
@@ -153,6 +150,7 @@ ul {
         align-content: center;
         background: url("./icons.png") no-repeat center right; 
         background-size: 24px 24px;
+        position: absolute;
       }
       .search-box::placeholder {
         padding-left: 5px;
@@ -162,7 +160,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 900px;
 }
    
     </style>
@@ -183,28 +181,27 @@ ul {
     <div>
       <input id="search" class="search-box" placeholder="Search..."></input>
     </div>
-
-      <ul class="row">
-        <li class="list-none">
-          <a href="index.html" class="navbar__links">Home</a>
-        </li>
-        <li class="list-none">
-          <a href="about.html" class="navbar__links">About</a>
-        </li>
-        <li class="list-none">
-          <a href="about.html" class="navbar__links">Cards</a>
-        </li>
-        <li class="list-none">
-          <a href="about.html" class="navbar__links">Auctions</a>
-        </li>
-      </ul>
+</div>
+     
     </div>
   </div>
+</div>
 
-  <div class="navbar__right text-sky-500">
+  <div class="navbar__right text-slate-800">
+  <ul class="navbar__menu">
+    <li class="navbar__item">
+      <a href="index.html" class="navbar__links">Home</a>
+    </li>
+    <li class="navbar__item">
+      <a href="about.html" class="navbar__links">About</a>
+    </li>
+    <li class="navbar__item">
+      <a href="about.html" class="navbar__links">Auctions</a>
+    </li>
     <li class="navbar__btn navbar__item navbar__menu">
       <a href="signup.html" class="button bg-cyan-500">SIGN UP</a>
     </li>
+    </ul>
   </div>
 
 </nav>
