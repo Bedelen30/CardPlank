@@ -12,6 +12,12 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+      .register-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
       .navbar {
   margin: 0;
   padding: 0;
@@ -62,6 +68,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  margin-top: 18px;
 }
 
 
@@ -109,6 +116,7 @@ ul {
         color: #444444;
         text-transform: uppercase;
         margin-right: 5px;
+        margin-top: 0px
       }
 
       .text-center {
@@ -122,14 +130,13 @@ ul {
       .button {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
-        /* background-color: #0077b6; */
+        background-color: #0077b6;
         color: #ffffff;
         border: none;
         padding: 10px 20px;
         border-radius: 20px;
         cursor: pointer;
       }
-
       .button:hover {
         background-color: #ffffff;
         color: #0077b6;
@@ -138,18 +145,19 @@ ul {
       .search-box {
         display: flex;
         color: #000;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid black;
-        padding: 8px;
+        padding: 3px;
         width: 30vw;
         justify-content: center;
         flex-wrap: wrap;
-        transform: translateX(2.5vw);
+        transform: translateX(-4.5vw);
         align-items: center;
         align-content: center;
         background: url("./icons.png") no-repeat center right; 
         background-size: 24px 24px;
         position: absolute;
+        margin-top: -4.5px;
       }
       .search-box::placeholder {
         padding-left: 5px;
@@ -160,6 +168,8 @@ ul {
   justify-content: center;
   align-items: center;
   height: 900px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
    
     </style>
@@ -167,42 +177,36 @@ ul {
   <body>
   <div class="example">
   <img src="example.png" alt="img" class="example" />
+  
 </div>
-    <nav class="navbar">
+<nav class="navbar">
   <div class="navbar__left">
     <a href="CAP.PNG" id="navbar__logo">
       <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
     </a>
   </div>
-  
 
   <div class="nav_center">
     <div>
       <input id="search" class="search-box" placeholder="Search..."></input>
     </div>
-</div>
-     
+  </div>
+  <div class="navbar__right text-slate-800">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="about.html" class="navbar__links">About</a>
+        <li class="navbar__item">
+          <a href="Auctions.html" class="navbar__links">Auctions</a>
+      </li>
+    </ul>
+    <div>
+      <a href="register.html" class="button">Register</a>
     </div>
   </div>
-</div>
-
-  <div class="navbar__right text-slate-800">
-  <ul class="navbar__menu">
-    <li class="navbar__item">
-      <a href="index.html" class="navbar__links">Home</a>
-    </li>
-    <li class="navbar__item">
-      <a href="about.html" class="navbar__links">About</a>
-    </li>
-    <li class="navbar__item">
-      <a href="about.html" class="navbar__links">Auctions</a>
-    </li>
-    <li class="navbar__btn navbar__item navbar__menu">
-      <a href="signup.html" class="button bg-cyan-500">SIGN UP</a>
-    </li>
-    </ul>
-  </div>
-
+  
 </nav>
 
   </div>

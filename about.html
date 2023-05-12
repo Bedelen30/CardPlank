@@ -5,13 +5,35 @@
     <title>CardPlank</title>
     <link rel="shortcut icon" type="x-icon" href="CARDPLANK..png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <style>
+    <head>
+    <meta charset="utf-8" />
+    <title>CardPlank</title>
+    <link rel="shortcut icon" type="x-icon" href="CARDPLANK..png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <style>
       body {
         background-image: url('cp.png');
         background-repeat: no-repeat;
-        background-size: stretch;
-        margin-top: 100px;
+        background-size: cover;
       }
+      .register-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+      .navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
       .navbar {
         display: flex;
@@ -30,14 +52,67 @@
   padding: 0 50px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
-      }
-      #navbar__logo {
+}
+      .navbar__left {
+  flex: 1;
+}
+@media screen and (min-width:768px) {
+  .logo-img {
+    margin-left: -50px !important;
+    width: 400px !important;
+    height: 80px !important;
+    margin-top: 20px !important;
+  }
+  a {
+  text-decoration: none;
+}
+}
+@media screen and (max-width:767px) {
+  .logo-img {
+    width: 150px;
+  }
+}
+.navbar__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+
+.nav_center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 30vw;
+  margin: 0;
+  list-style: none;
+}
+.list-none {
+  list-style:none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+#navbar__logo {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 2rem;
         text-transform: uppercase;
         text-decoration: none;
         color: #444444;
+        position: fixed;
+        margin-top: -55px;
       }
 
       .navbar__menu {
@@ -56,6 +131,12 @@
         text-decoration: none;
         color: #444444;
         text-transform: uppercase;
+        margin-right: 5px;
+        margin-top: 10px
+      }
+
+      .text-center {
+        text-align: center;
       }
 
       .navbar__links:hover {
@@ -72,45 +153,32 @@
         border-radius: 20px;
         cursor: pointer;
       }
-
       .button:hover {
         background-color: #ffffff;
         color: #0077b6;
         border: 2px solid #0077b6;
       }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar">
-        <a href="CAP.PNG" id="navbar__logo">
-          <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
-        </a>     
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="about.html" class="navbar__links">About</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="signup.html" class="button">SIGN UP</a>
-          </li>
-        </ul>
-      </nav>
-      <style>
-        .logo-img {
-        margin-left: -50px !important;
-          width: 400px;
-          height: auto;
-          margin-top: 30px
-        }
-      </style>   
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Us</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-  <style>
+      .search-box {
+        display: flex;
+        color: #000;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px;
+        width: 30vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        transform: translateX(-4.5vw);
+        align-items: center;
+        align-content: center;
+        background: url("./icons.png") no-repeat center right; 
+        background-size: 24px 24px;
+        margin-top: -4.5px;
+      }
+      .search-box::placeholder {
+        padding-left: 5px;
+        color: #000;
+      }
+      
     body {
       font-family: 'Montserrat', sans-serif;
       background-image: url('cp.png');
@@ -150,8 +218,39 @@ p {
 			max-width: 1800px;
             margin-top: -50px;
 }
+
   </style>
 </head>
+</div>
+<nav class="navbar">
+  <div class="navbar__left">
+    <a href="CAP.PNG" id="navbar__logo">
+      <img src="CAP.PNG" alt="CARDPLANK" class="logo-img">
+    </a>
+  </div>
+
+  <div class="nav_center">
+    <div>
+      <input id="search" class="search-box" placeholder="Search..."></input>
+    </div>
+  </div>
+  <div class="navbar__right text-slate-800">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="about.html" class="navbar__links">About</a>
+        <li class="navbar__item">
+          <a href="Auctions.html" class="navbar__links">Auctions</a>
+      </li>
+    </ul>
+    <div>
+      <a href="register.html" class="button">Register</a>
+    </div>
+  </div>
+  
+</nav>
 <body>
   <div id="mc_embed_signup">
     <h1>About Us</h1>
