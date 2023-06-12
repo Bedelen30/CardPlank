@@ -1,0 +1,133 @@
+* {
+    font-family: 'Kum Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('./assets/cp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: -webkit-fill-available;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0);
+    padding: 2% 4%;
+}
+
+.logo {
+    width: 250px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.search-bar {
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    transition: all .3s;   
+}
+
+.search-bar:focus {
+    outline: none;
+    background-color: #0076b65d;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+.nav-links a:last-child {
+    padding: 2% 4%;
+    border: solid thin #0077b6;
+    transition: all .3s;
+    border-radius: 10px;
+    color: #0077b6;
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+    text-transform: unset;
+}
+
+.nav-links a:last-child:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.subscribe {
+    padding: 4% 4%;
+    background-color: white;
+}
+
+.subscribe button {
+    all: unset;
+    border: solid thin #0077b6;
+    padding: 2% 4%;
+    width: 25%;
+    text-align: center;
+    transition: all .3s;
+    font-weight: 700;
+    margin-top: 4%;
+}
+
+.subscribe button:hover {
+    cursor: pointer;
+    background-color: #0077b6;
+}
+
+.subscribe input {
+    display: block;
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: solid thin #0077b6;
+}
+
+.subscribe input:focus {
+    outline: unset;
+    background-color: #0076b65d;
+}
+
+.about {
+    margin: 4% auto;
+    padding: 4% 4%;
+    background-color: white;
+    width: 80%;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #444444;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #444444;
+}
