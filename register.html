@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <title>CardPlank</title>
 </head>
@@ -11,24 +13,31 @@
 
 <body>
     
-    <nav class="navbar">
-        <img class="logo" src="./assets/CAP.PNG" alt="logo">
-        <input class="search-bar" type="text" placeholder="Search...">
-        <div class="nav-links">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./auction.html">Auction</a>
-            <a href="#">Register</a>
-        </div>
-    </nav>
-    
-    <section>
-        <form class="subscribe">
-            <h2>Subscribe to be notified of CardPlank's Release!</h2>
-            <input autocomplete="email" type="email" placeholder="example@xyz.com">
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
+    <header class="register">
+
+        <nav class="navbar">
+            <img class="logo" src="./assets/CAP.PNG" alt="logo">
+            <div class="search-bar">
+                <input class="search-bar" type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./auction.html">Auction</a>
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        
+        <section class="subscribe-c">
+            <form class="subscribe">
+                <h2>Subscribe to be notified of CardPlank's Release!</h2>
+                <input autocomplete="email" type="email" placeholder="example@xyz.com">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </header>
 
 </body>
 </html>
